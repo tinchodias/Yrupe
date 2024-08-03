@@ -26,8 +26,7 @@ YrFsWriter class >> newWithFileReference: aFileReference [
 YrFsWriter >> at: filename writeAsLeaf: aString [
 
 	^ (fileReference / filename) 
-			writeStreamDo: [ :stream | 
-				stream binary.
+			binaryWriteStreamDo: [ :stream | 
 				stream nextPutAll: aString ];
 			yourself
 ]

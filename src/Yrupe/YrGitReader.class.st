@@ -27,7 +27,7 @@ YrGitReader >> read: anObject with: aYrEncoding [
 { #category : #reading }
 YrGitReader >> readAsLeaf: anObject [
 	
-	^ anObject rawBuffer readString
+	^ anObject rawBuffer utf8StringFromCString
 ]
 
 { #category : #reading }

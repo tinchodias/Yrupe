@@ -19,10 +19,10 @@ YrStringEncoding class >> isAbstract [
 	^ false
 ]
 
-{ #category : #private }
+{ #category : #writing }
 YrStringEncoding >> objectFrom: aString [
 
-	^ aString copy withSqueakLineEndings
+	^ aString copy withInternalLineEndings
 ]
 
 { #category : #private }
